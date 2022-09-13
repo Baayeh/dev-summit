@@ -160,14 +160,14 @@ section#program {
   padding: 2em 0;
 }
 
-section#program h5:nth-child(1) {
+section h5:nth-child(1) {
   color: #fff;
   position: relative;
   text-align: center;
   margin-bottom: 2em;
 }
 
-section#program h5:nth-child(1)::after {
+section h5:nth-child(1)::after {
   content: '';
   width: 55px;
   height: 2px;
@@ -201,7 +201,7 @@ div.list-item div.card:hover p {
   color: #272a31;
 }
 
-div.card img {
+div.list-item div.card img {
   width: 3em;
   height: 3em;
 }
@@ -220,6 +220,43 @@ div.card h5 {
 div.card p {
   color: #fff;
   transition: 1s;
+}
+
+section#featured-list {
+  padding: 2em 0;
+}
+
+section#featured-list h5 {
+  color: #272a31;
+}
+
+div.act-list {
+  row-gap: 1em;
+}
+
+div.act-item {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+img.act-img {
+  width: 8em;
+  height: 8em;
+}
+
+h6.act-name {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+div.card-content small {
+  color: #ec5242;
+  font-style: italic;
+}
+
+div.card-content p {
+  margin-top: 1em;
 }
 
 /**********************
