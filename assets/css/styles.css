@@ -9,12 +9,40 @@
   color: #272a31;
 }
 
+body {
+  background-color: #f1efefc8;
+}
+
 /***************
   Mobile Styles
 ***************/
+header {
+  position: relative;
+}
+
 div#header-bg {
   height: 100vh;
-  background-color: gray;
+  background-image: url('../img/tech-tool1.png'), url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
+  background-repeat: no-repeat;
+  background-size: 8em, 10em, 20em;
+  background-position: 17.2em -1.7em, 50% bottom, -180% 45%;
+  opacity: 0.3;
+  filter: blur(3px);
+}
+
+nav {
+  background-color: transparent;
+}
+
+a.navbar-brand {
+  color: #272a31;
+  font-weight: 900;
+  font-size: 2em;
+  transition: 1s;
+}
+
+a.navbar-brand span {
+  color: #ec5242;
 }
 
 div#nav-lists {
@@ -64,10 +92,58 @@ div.ul-wrapper ul li a:hover::before {
   filter: drop-shadow(0 0 5px #fff);
 }
 
+section#header-content {
+  position: absolute;
+  top: 2em;
+}
+
+section#header-content h1 {
+  margin-top: 1em;
+  font-size: 3.2em;
+  position: relative;
+  height: 2.3em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+section#header-content h1 span {
+  font-weight: 900;
+  position: absolute;
+  top: 1em;
+  color: transparent;
+  -webkit-text-stroke: 4px #ec5242;
+  letter-spacing: 6px;
+}
+
+section#header-content p.p-info {
+  font-size: 1.3em;
+  border: 3px dashed #fff;
+  padding: 1em;
+  font-weight: 500;
+}
+
+section#header-content p.p-info span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+section#header-content h4 {
+  font-size: 1.7em;
+  font-weight: 800;
+  color: #424242;
+}
+
+section#header-content p.location {
+  font-size: 1.2em;
+}
+
+section#header-content p.location span svg {
+  width: 2em;
+}
+
 /**********************
   End of Mobile Styles
 ***********************/
-
 
 /*********************************
   BREAKPOINT FOR SCREENS >= 768PX
@@ -97,18 +173,16 @@ div.ul-wrapper ul li a:hover::before {
     -webkit-text-stroke: unset;
     transition: 0.5s;
   }
-  
+
   div.ul-wrapper ul li a::before {
     content: unset;
   }
-  
+
   div.ul-wrapper ul li a:hover {
     color: #ec5242;
     border: none;
   }
 }
-
-
 
 /***************************************
  END OF BREAKPOINT FOR SCREENS >= 768PX
