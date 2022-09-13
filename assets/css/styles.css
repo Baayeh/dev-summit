@@ -25,6 +25,7 @@ div#header-bg {
   height: 100vh;
   background-image: url('../img/tech-tool1.png'), url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: 8em, 10em, 20em;
   background-position: 17.2em -1.7em, 50% bottom, -180% 45%;
   opacity: 0.3;
@@ -148,6 +149,79 @@ section#header-content p.location span svg {
   width: 2em;
 }
 
+section#program {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/program-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 0;
+}
+
+section#program h5:nth-child(1) {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section#program h5:nth-child(1)::after {
+  content: '';
+  width: 55px;
+  height: 2px;
+  background-color: #ec5242;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.program-list {
+  justify-content: center;
+  row-gap: 1em;
+}
+
+div.list-item div.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 1em;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.192);
+  transition: 1s;
+}
+
+div.list-item div.card:hover {
+  background-color: #fff;
+}
+
+div.list-item div.card:hover p {
+  color: #272a31;
+}
+
+div.card img {
+  width: 3em;
+  height: 3em;
+}
+
+div.list-item div.card * {
+  margin: 0;
+}
+
+div.card h5 {
+  color: #ec5242;
+  font-size: 1.3em;
+  font-weight: bold;
+  flex-basis: 18em;
+}
+
+div.card p {
+  color: #fff;
+  transition: 1s;
+}
+
 /**********************
   End of Mobile Styles
 ***********************/
@@ -207,6 +281,27 @@ section#header-content p.location span svg {
   section#header-content p.p-info {
     font-size: 1em;
     width: 70%;
+  }
+
+  div.program-list {
+    justify-content: center;
+    row-gap: 1.5em;
+  }
+
+  div.list-item div.card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 0;
+    height: 20em;
+    justify-content: center;
+  }
+
+  div.card h5 {
+    flex-basis: unset;
+  }
+
+  div.card p {
+    padding: 0 2em;
   }
 }
 
