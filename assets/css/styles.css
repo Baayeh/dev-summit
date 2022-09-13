@@ -259,6 +259,59 @@ div.card-content p {
   margin-top: 1em;
 }
 
+section#partners {
+  background-color: #424242;
+  padding: 2em 0;
+}
+
+section#partners div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3em;
+}
+
+span.partner-logo {
+  color: #fff;
+  font-size: 2em;
+}
+
+span.partner-logo span {
+  color: #ec5242;
+}
+
+img.partner-img {
+  width: 4em;
+}
+
+footer {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+footer div.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.footer-items p {
+  margin-bottom: 0;
+}
+
+footer span.my-logo {
+  font-size: 1.8em;
+  flex-basis: 10em;
+}
+
+footer span.my-logo span {
+  color: #ec5242;
+}
+
 /**********************
   End of Mobile Styles
 ***********************/
@@ -340,6 +393,23 @@ div.card-content p {
   div.card p {
     padding: 0 2em;
   }
+
+  section#partners {
+    padding: 4em 0;
+  }
+
+  footer div.footer-items {
+    width: 100%;
+    gap: 3em;
+  }
+
+  footer span.my-logo {
+    flex-basis: unset;
+  }
+
+  /* div.footer-items div {
+    width: 100%;
+  } */
 }
 
 /***************************************
