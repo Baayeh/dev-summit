@@ -1,3 +1,115 @@
-body {
-  color: grey;
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #272a31;
 }
+
+/***************
+  Mobile Styles
+***************/
+div#header-bg {
+  height: 100vh;
+  background-color: gray;
+}
+
+div#nav-lists {
+  background-color: #272a31;
+}
+
+div.ul-wrapper {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div.ul-wrapper ul {
+  position: relative;
+  top: -4em;
+  gap: 3em;
+}
+
+div.ul-wrapper ul li {
+  position: relative;
+}
+
+div.ul-wrapper ul li a {
+  position: relative;
+  font-size: 2.5em;
+  text-align: start;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #ec5242;
+}
+
+div.ul-wrapper ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1.5px #ec5242;
+}
+
+div.ul-wrapper ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+/**********************
+  End of Mobile Styles
+***********************/
+
+
+/*********************************
+  BREAKPOINT FOR SCREENS >= 768PX
+**********************************/
+@media screen and (min-width: 768px) {
+  div.ul-wrapper {
+    display: flex;
+    min-height: unset;
+    justify-content: flex-end;
+  }
+
+  div.ul-wrapper ul {
+    position: relative;
+    top: unset;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  div.ul-wrapper ul li a {
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #272a31;
+    -webkit-text-stroke: unset;
+    transition: 0.5s;
+  }
+  
+  div.ul-wrapper ul li a::before {
+    content: unset;
+  }
+  
+  div.ul-wrapper ul li a:hover {
+    color: #ec5242;
+    border: none;
+  }
+}
+
+
+
+/***************************************
+ END OF BREAKPOINT FOR SCREENS >= 768PX
+****************************************/
