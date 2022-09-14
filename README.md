@@ -16,7 +16,7 @@
 
 
 ## Live Demo
-> Link will be uploaded soon :blush:
+> [Devs, Assemble!!](https://baayeh.github.io/dev-summit/)
 
 ## Getting Started
 
@@ -45,6 +45,7 @@ Feel free to check the [issues page](../../issues/).
 
 - [Cindy Shin in Behance](https://www.behance.net/adagio07)
 - Microverse' linting procedures
+- [Flaticons](https://www.flaticon.com/icons)
 
 ## 📝 License
 
