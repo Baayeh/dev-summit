@@ -112,6 +112,14 @@ section#header-content h1 {
   margin-bottom: 0;
 }
 
+span.partner-logo span {
+  color: #ec5242;
+}
+
+footer span.my-logo span {
+  color: #ec5242;
+}
+
 section#header-content h1 span {
   font-weight: 900;
   position: absolute;
@@ -197,6 +205,19 @@ div.list-item div.card:hover {
   background-color: #fff;
 }
 
+div.card-content p {
+  margin-top: 1em;
+}
+
+div.card p {
+  color: #fff;
+  transition: 1s;
+}
+
+footer div.footer-items p {
+  margin-bottom: 0;
+}
+
 div.list-item div.card:hover p {
   color: #272a31;
 }
@@ -215,11 +236,6 @@ div.card h5 {
   font-size: 1.3em;
   font-weight: bold;
   flex-basis: 18em;
-}
-
-div.card p {
-  color: #fff;
-  transition: 1s;
 }
 
 section#featured-list {
@@ -255,10 +271,6 @@ div.card-content small {
   font-style: italic;
 }
 
-div.card-content p {
-  margin-top: 1em;
-}
-
 section#partners {
   background-color: #424242;
   padding: 2em 0;
@@ -275,10 +287,6 @@ section#partners div {
 span.partner-logo {
   color: #fff;
   font-size: 2em;
-}
-
-span.partner-logo span {
-  color: #ec5242;
 }
 
 img.partner-img {
@@ -299,17 +307,9 @@ footer div.footer-items {
   align-items: center;
 }
 
-footer div.footer-items p {
-  margin-bottom: 0;
-}
-
 footer span.my-logo {
   font-size: 1.8em;
   flex-basis: 10em;
-}
-
-footer span.my-logo span {
-  color: #ec5242;
 }
 
 /**********************
@@ -360,7 +360,7 @@ footer span.my-logo span {
   div.ul-wrapper ul li a:hover {
     color: #ec5242;
   }
-  
+
   section#header-content {
     width: 85%;
     top: 50%;
@@ -443,7 +443,7 @@ footer span.my-logo span {
     font-size: 1.5em;
     text-align: left;
   }
-  
+
   section#header-content p.location {
     font-size: 1.1em;
     text-align: left;
@@ -455,6 +455,7 @@ footer span.my-logo span {
     width: 1em;
   }
 }
+
 /***************************************
  END OF BREAKPOINT FOR SCREENS >= 992PX
 ****************************************/
@@ -466,19 +467,19 @@ footer span.my-logo span {
   div#header-bg {
     background-size: 10em, 33em;
   }
-  
+
   section#header-content h1 {
     font-size: 6em;
   }
-  
+
   section#header-content p.p-info {
     width: 60%;
   }
-  
+
   section#header-content h4 {
     font-size: 2em;
   }
-  
+
   section#header-content p.location {
     font-size: 1.5em;
   }
