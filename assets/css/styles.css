@@ -12,9 +12,9 @@ body {
   background-color: #f1efefc8;
 }
 
-/***************
-  Mobile Styles
-***************/
+/**************************
+  HOMEPAGE - Mobile Styles
+***************************/
 header {
   position: relative;
 }
@@ -104,7 +104,7 @@ section#header-content {
 
 section#header-content h1 {
   margin-top: 1em;
-  font-size: 3.2em;
+  font-size: 3em;
   position: relative;
   height: 2.3em;
   text-transform: uppercase;
@@ -311,13 +311,13 @@ footer span.my-logo {
   flex-basis: 10em;
 }
 
-/**********************
-  End of Mobile Styles
-***********************/
+/********************************
+ HOMEPAGE - End of Mobile Styles
+*********************************/
 
-/*********************************
-  BREAKPOINT FOR SCREENS >= 768PX
-**********************************/
+/********************************************
+  HOMEPAGE - BREAKPOINT FOR SCREENS >= 768PX
+*********************************************/
 @media screen and (min-width: 768px) {
   div#header-bg {
     background-image: url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
@@ -405,19 +405,15 @@ footer span.my-logo {
   footer span.my-logo {
     flex-basis: unset;
   }
-
-  /* div.footer-items div {
-    width: 100%;
-  } */
 }
 
-/***************************************
- END OF BREAKPOINT FOR SCREENS >= 768PX
-****************************************/
+/***************************************************
+ HOMEPAGE - END OF BREAKPOINT FOR SCREENS >= 768PX
+***************************************************/
 
-/***************************************
- BREAKPOINT FOR SCREENS >= 992PX
-****************************************/
+/*******************************************
+ HOMEPAGE - BREAKPOINT FOR SCREENS >= 992PX
+********************************************/
 @media screen and (min-width: 992px) {
   div#header-bg {
     background-image: url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
@@ -455,13 +451,13 @@ footer span.my-logo {
   }
 }
 
-/***************************************
- END OF BREAKPOINT FOR SCREENS >= 992PX
-****************************************/
+/***************************************************
+ HOMEPAGE - END OF BREAKPOINT FOR SCREENS >= 992PX
+***************************************************/
 
-/***************************************
- BREAKPOINT FOR SCREENS >= 1200PX
-****************************************/
+/********************************************
+ HOMEPAGE - BREAKPOINT FOR SCREENS >= 1200PX
+*********************************************/
 @media screen and (min-width: 1200px) {
   div#header-bg {
     background-size: 10em, 33em;
@@ -484,6 +480,23 @@ footer span.my-logo {
   }
 }
 
-/***************************************
- END BREAKPOINT FOR SCREENS >= 1200PX
-****************************************/
+/************************************************
+ HOMEPAGE - END BREAKPOINT FOR SCREENS >= 1200PX
+*************************************************/
+
+/************************************************
+ ABOUT PAGE - MOBILE VERSION
+*************************************************/
+header.about-header section#header-content p.p-info {
+  background-color: #fff;
+  border: 2px dashed #d3d3d3;
+}
+
+header.about-header section#header-content p {
+  text-align: center;
+}
+
+header.about-header section#header-content a {
+  display: block;
+  text-align: center;
+}
