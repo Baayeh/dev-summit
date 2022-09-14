@@ -1,3 +1,490 @@
-body {
-  color: grey;
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #272a31;
 }
+
+body {
+  background-color: #f1efefc8;
+}
+
+/***************
+  Mobile Styles
+***************/
+header {
+  position: relative;
+}
+
+div#header-bg {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/tech-tool1.png'), url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 8em, 10em, 20em;
+  background-position: 17.2em -1.7em, 50% bottom, -180% 45%;
+  opacity: 0.3;
+  filter: blur(3px);
+}
+
+nav {
+  background-color: transparent;
+}
+
+a.navbar-brand {
+  color: #272a31;
+  font-weight: 900;
+  font-size: 2em;
+  transition: 1s;
+}
+
+a.navbar-brand span {
+  color: #ec5242;
+}
+
+div#nav-lists {
+  background-color: #272a31;
+  overflow-y: auto;
+}
+
+div.ul-wrapper {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div.ul-wrapper ul {
+  position: relative;
+  top: -4em;
+  gap: 3em;
+}
+
+div.ul-wrapper ul li {
+  position: relative;
+}
+
+div.ul-wrapper ul li a {
+  position: relative;
+  font-size: 2.5em;
+  text-align: start;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #ec5242;
+}
+
+div.ul-wrapper ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1.5px #ec5242;
+}
+
+div.ul-wrapper ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+section#header-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#header-content h1 {
+  margin-top: 1em;
+  font-size: 3.2em;
+  position: relative;
+  height: 2.3em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+span.partner-logo span {
+  color: #ec5242;
+}
+
+footer span.my-logo span {
+  color: #ec5242;
+}
+
+section#header-content h1 span {
+  font-weight: 900;
+  position: absolute;
+  top: 1em;
+  color: transparent;
+  -webkit-text-stroke: 4px #ec5242;
+  letter-spacing: 6px;
+}
+
+section#header-content p.p-info {
+  font-size: 1.3em;
+  border: 3px dashed #fff;
+  padding: 1em;
+  font-weight: 500;
+}
+
+section#header-content p.p-info span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+section#header-content h4 {
+  font-size: 1.7em;
+  font-weight: 800;
+  color: #424242;
+  text-align: center;
+}
+
+section#header-content p.location {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+section#header-content p.location span svg {
+  width: 2em;
+}
+
+section#program {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/program-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 0;
+}
+
+section h5:nth-child(1) {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section h5:nth-child(1)::after {
+  content: '';
+  width: 55px;
+  height: 2px;
+  background-color: #ec5242;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.program-list {
+  justify-content: center;
+  row-gap: 1em;
+}
+
+div.list-item div.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 1em;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.192);
+  transition: 1s;
+}
+
+div.list-item div.card:hover {
+  background-color: #fff;
+}
+
+div.card-content p {
+  margin-top: 1em;
+}
+
+div.card p {
+  color: #fff;
+  transition: 1s;
+}
+
+footer div.footer-items p {
+  margin-bottom: 0;
+}
+
+div.list-item div.card:hover p {
+  color: #272a31;
+}
+
+div.list-item div.card img {
+  width: 3em;
+  height: 3em;
+}
+
+div.list-item div.card * {
+  margin: 0;
+}
+
+div.card h5 {
+  color: #ec5242;
+  font-size: 1.3em;
+  font-weight: bold;
+  flex-basis: 18em;
+}
+
+section#featured-list {
+  padding: 2em 0;
+}
+
+section#featured-list h5 {
+  color: #272a31;
+}
+
+div.act-list {
+  row-gap: 1em;
+}
+
+div.act-item {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+img.act-img {
+  width: 8em;
+  height: 8em;
+}
+
+h6.act-name {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+div.card-content small {
+  color: #ec5242;
+  font-style: italic;
+}
+
+section#partners {
+  background-color: #424242;
+  padding: 2em 0;
+}
+
+section#partners div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3em;
+}
+
+span.partner-logo {
+  color: #fff;
+  font-size: 2em;
+}
+
+img.partner-img {
+  width: 4em;
+}
+
+footer {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+footer div.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span.my-logo {
+  font-size: 1.8em;
+  flex-basis: 10em;
+}
+
+/**********************
+  End of Mobile Styles
+***********************/
+
+/*********************************
+  BREAKPOINT FOR SCREENS >= 768PX
+**********************************/
+@media screen and (min-width: 768px) {
+  div#header-bg {
+    background-image: url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
+    background-size: 8em, 20em;
+    background-position: 50% bottom, 120% 60%;
+    opacity: unset;
+    filter: unset;
+  }
+
+  nav {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  div.ul-wrapper {
+    display: flex;
+    min-height: unset;
+    justify-content: flex-end;
+  }
+
+  div.ul-wrapper ul {
+    position: relative;
+    top: unset;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
+  div.ul-wrapper ul li a {
+    font-size: 0.9em;
+    color: #272a31;
+    -webkit-text-stroke: unset;
+    transition: 0.5s;
+  }
+
+  div.ul-wrapper ul li a::before {
+    content: unset;
+  }
+
+  div.ul-wrapper ul li a:hover {
+    color: #ec5242;
+  }
+
+  section#header-content {
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  section#header-content p.p-info {
+    font-size: 1em;
+    width: 70%;
+  }
+
+  div.program-list {
+    justify-content: center;
+    row-gap: 1.5em;
+  }
+
+  div.list-item div.card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 0;
+    height: 20em;
+    justify-content: center;
+  }
+
+  div.card h5 {
+    flex-basis: unset;
+  }
+
+  div.card p {
+    padding: 0 2em;
+  }
+
+  section#partners {
+    padding: 4em 0;
+  }
+
+  footer div.footer-items {
+    width: 100%;
+    gap: 3em;
+  }
+
+  footer span.my-logo {
+    flex-basis: unset;
+  }
+
+  /* div.footer-items div {
+    width: 100%;
+  } */
+}
+
+/***************************************
+ END OF BREAKPOINT FOR SCREENS >= 768PX
+****************************************/
+
+/***************************************
+ BREAKPOINT FOR SCREENS >= 992PX
+****************************************/
+@media screen and (min-width: 992px) {
+  div#header-bg {
+    background-image: url('../img/tech-tool2.png'), url('../img/tech-tool3.png');
+    background-repeat: no-repeat;
+    background-size: 8em, 25em;
+    background-position: 50% bottom, 115% 50%;
+  }
+
+  div.ul-wrapper ul {
+    gap: 2em;
+  }
+
+  div.ul-wrapper ul li a {
+    font-size: 1em;
+  }
+
+  section#header-content h1 {
+    font-size: 3.5em;
+  }
+
+  section#header-content h4 {
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  section#header-content p.location {
+    font-size: 1.1em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  section#header-content p.location span svg {
+    width: 1em;
+  }
+}
+
+/***************************************
+ END OF BREAKPOINT FOR SCREENS >= 992PX
+****************************************/
+
+/***************************************
+ BREAKPOINT FOR SCREENS >= 1200PX
+****************************************/
+@media screen and (min-width: 1200px) {
+  div#header-bg {
+    background-size: 10em, 33em;
+  }
+
+  section#header-content h1 {
+    font-size: 6em;
+  }
+
+  section#header-content p.p-info {
+    width: 60%;
+  }
+
+  section#header-content h4 {
+    font-size: 2em;
+  }
+
+  section#header-content p.location {
+    font-size: 1.5em;
+  }
+}
+
+/***************************************
+ END BREAKPOINT FOR SCREENS >= 1200PX
+****************************************/
