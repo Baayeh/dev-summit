@@ -372,15 +372,6 @@ footer span.my-logo {
     width: 70%;
   }
 
-  header.about-header section#header-content p  {
-    text-align: start !important;
-  }
-  
-  header.about-header section#header-content a {
-    display: inline !important;
-    text-align: start;
-  }
-
   div.program-list {
     justify-content: center;
     row-gap: 1.5em;
@@ -501,7 +492,7 @@ header.about-header section#header-content p.p-info {
   border: 2px dashed #d3d3d3;
 }
 
-header.about-header section#header-content p  {
+header.about-header section#header-content p {
   text-align: center;
 }
 
