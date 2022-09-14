@@ -2,7 +2,7 @@
 
 # A Website For A Dev Summit
 
-> This is a capstone project where I develop a website to invite to a comedy and music concert based on the original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+> This is a capstone project where I develop a website for developers' summit. The design is based on the original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 > This project includes :
 - The home page
 - The about page

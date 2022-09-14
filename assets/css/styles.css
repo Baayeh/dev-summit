@@ -372,6 +372,19 @@ footer span.my-logo {
     width: 70%;
   }
 
+  div.card p {
+    padding: 0 2em;
+  }
+
+  header.about-header section#header-content p {
+    text-align: start !important;
+  }
+
+  header.about-header section#header-content a {
+    display: inline !important;
+    text-align: start;
+  }
+
   div.program-list {
     justify-content: center;
     row-gap: 1.5em;
@@ -387,10 +400,6 @@ footer span.my-logo {
 
   div.card h5 {
     flex-basis: unset;
-  }
-
-  div.card p {
-    padding: 0 2em;
   }
 
   section#partners {
