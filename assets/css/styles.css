@@ -342,12 +342,23 @@ footer span.my-logo {
     padding-right: 2em;
   }
 
+  div.ul-wrapper ul li a {
+    font-size: 0.9em;
+    color: #272a31;
+    -webkit-text-stroke: unset;
+    transition: 0.5s;
+  }
+
+  div.ul-wrapper ul li a:hover {
+    color: #ec5242;
+  }
+
   div#socials a {
     color: #fff;
     text-decoration: none;
   }
 
-  div#socials a i{
+  div#socials a i {
     color: #fff;
   }
 
@@ -369,19 +380,8 @@ footer span.my-logo {
     gap: 0.5em;
   }
 
-  div.ul-wrapper ul li a {
-    font-size: 0.9em;
-    color: #272a31;
-    -webkit-text-stroke: unset;
-    transition: 0.5s;
-  }
-
   div.ul-wrapper ul li a::before {
     content: unset;
-  }
-
-  div.ul-wrapper ul li a:hover {
-    color: #ec5242;
   }
 
   section#header-content {
