@@ -31,6 +31,10 @@ div#header-bg {
   filter: blur(3px);
 }
 
+div#socials {
+  display: none;
+}
+
 nav {
   background-color: transparent;
 }
@@ -325,6 +329,26 @@ footer span.my-logo {
     background-position: 50% bottom, 120% 60%;
     opacity: unset;
     filter: unset;
+  }
+
+  div#socials {
+    display: flex;
+    background-color: #272a31;
+    padding: 5px;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 100%;
+    gap: 1em;
+    padding-right: 2em;
+  }
+
+  div#socials a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  div#socials a i{
+    color: #fff;
   }
 
   nav {
