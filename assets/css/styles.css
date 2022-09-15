@@ -8,6 +8,10 @@
   color: #272a31;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f1efefc8;
 }
@@ -31,8 +35,19 @@ div#header-bg {
   filter: blur(3px);
 }
 
+div#socials {
+  display: none;
+}
+
 nav {
   background-color: transparent;
+}
+
+button.navbar-toggler,
+button.navbar-toggler:hover,
+button.navbar-toggler:focus {
+  border: none;
+  outline: none;
 }
 
 a.navbar-brand {
@@ -112,10 +127,6 @@ section#header-content h1 {
 }
 
 span.partner-logo span {
-  color: #ec5242;
-}
-
-footer span.my-logo span {
   color: #ec5242;
 }
 
@@ -241,6 +252,10 @@ section#featured-list {
   padding: 2em 0;
 }
 
+div.task-overlay h5 {
+  color: #fff;
+}
+
 section#featured-list h5 {
   color: #272a31;
 }
@@ -327,6 +342,37 @@ footer span.my-logo {
     filter: unset;
   }
 
+  div#socials {
+    display: flex;
+    background-color: #272a31;
+    padding: 5px;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 100%;
+    gap: 1em;
+    padding-right: 6em;
+  }
+
+  div.ul-wrapper ul li a {
+    font-size: 0.9em;
+    color: #272a31;
+    -webkit-text-stroke: unset;
+    transition: 0.5s;
+  }
+
+  div.ul-wrapper ul li a:hover {
+    color: #ec5242;
+  }
+
+  div#socials a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  div#socials a i {
+    color: #fff;
+  }
+
   nav {
     background-color: #fff;
     box-shadow: 2px 2px 5px gray;
@@ -345,19 +391,8 @@ footer span.my-logo {
     gap: 0.5em;
   }
 
-  div.ul-wrapper ul li a {
-    font-size: 0.9em;
-    color: #272a31;
-    -webkit-text-stroke: unset;
-    transition: 0.5s;
-  }
-
   div.ul-wrapper ul li a::before {
     content: unset;
-  }
-
-  div.ul-wrapper ul li a:hover {
-    color: #ec5242;
   }
 
   section#header-content {
@@ -370,6 +405,19 @@ footer span.my-logo {
   section#header-content p.p-info {
     font-size: 1em;
     width: 70%;
+  }
+
+  div.card p {
+    padding: 0 2em;
+  }
+
+  header.about-header section#header-content p {
+    text-align: start !important;
+  }
+
+  header.about-header section#header-content a {
+    display: inline !important;
+    text-align: start;
   }
 
   div.program-list {
@@ -389,12 +437,12 @@ footer span.my-logo {
     flex-basis: unset;
   }
 
-  div.card p {
-    padding: 0 2em;
-  }
-
   section#partners {
     padding: 4em 0;
+  }
+
+  section#about-wrapper section#partners {
+    display: none;
   }
 
   footer div.footer-items {
@@ -404,6 +452,36 @@ footer span.my-logo {
 
   footer span.my-logo {
     flex-basis: unset;
+  }
+
+  footer#about-footer {
+    background-color: #272a31 !important;
+    color: #fff;
+  }
+
+  footer#about-footer span.my-logo {
+    color: #fff !important;
+  }
+
+  footer#about-footer div.footer-items div p {
+    color: #fff;
+  }
+
+  footer#about-footer p.flaticons {
+    color: #fff;
+  }
+
+  div.task-overlay {
+    padding: 2em 0 !important;
+  }
+
+  section#task p.we-do {
+    width: 65%;
+    margin: 2em auto;
+  }
+
+  section#task p.about-logo {
+    width: 50%;
   }
 }
 
@@ -449,6 +527,14 @@ footer span.my-logo {
   section#header-content p.location span svg {
     width: 1em;
   }
+
+  section#task p.we-do {
+    width: 50%;
+  }
+
+  section#task p.about-logo {
+    width: 40%;
+  }
 }
 
 /***************************************************
@@ -478,6 +564,10 @@ footer span.my-logo {
   section#header-content p.location {
     font-size: 1.5em;
   }
+
+  section#task p.about-logo {
+    width: 30%;
+  }
 }
 
 /************************************************
@@ -492,6 +582,10 @@ header.about-header section#header-content p.p-info {
   border: 2px dashed #d3d3d3;
 }
 
+footer#about-footer p {
+  color: #272a31;
+}
+
 header.about-header section#header-content p {
   text-align: center;
 }
@@ -499,4 +593,76 @@ header.about-header section#header-content p {
 header.about-header section#header-content a {
   display: block;
   text-align: center;
+}
+
+section#task {
+  padding: 4em 1em;
+  background-color: #fff;
+  text-align: center;
+}
+
+section#task h5 {
+  color: #272a31;
+}
+
+section#task p.about-logo {
+  font-size: 3em;
+  font-weight: 900;
+  border: 1px solid #d3d3d3;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+section#task p.about-logo span {
+  color: #ec5242;
+}
+
+section#task-list div.list-item div.card {
+  position: relative;
+  padding: 0;
+}
+
+section#task-list div.list-item div.card img.task-bg {
+  width: 100%;
+  height: inherit;
+}
+
+div.task-overlay {
+  position: absolute;
+  width: 100%;
+  padding: 3em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #cd2b19;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+section#task-list {
+  padding: 5em 2em;
+}
+
+section#task-list div.list-item div.card:hover div.task-overlay {
+  opacity: 1;
+}
+
+section#task-list div.list-item div.card:hover div.task-overlay * {
+  color: #fff;
+}
+
+footer#about-footer {
+  background-color: #fff;
+  color: #fff;
+}
+
+footer#about-footer span.my-logo {
+  color: #272a31;
+}
+
+footer#about-footer span.my-logo span {
+  color: #ec5242;
 }

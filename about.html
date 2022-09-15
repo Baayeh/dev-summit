@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>About Us</title>
 </head>
@@ -14,35 +15,46 @@
     <header class="about-header">
       <div id="header-bg"></div>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md py-3 fixed-top">
-        <div class="container navigation-wrap">
-          <a class="navbar-brand d-none d-md-block" href="./index.html">&lt; <span>SPCTR</span> /&gt;</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-lists" aria-controls="nav-lists">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-start" id="nav-lists" tabindex="-1" aria-labelledby="nav-lists">
-            <div class="offcanvas-header pb-0 justify-content-end">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="ul-wrapper">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html" data-text="About">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-text="Attend">Attend</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-text="Volunteer">Volunteer</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-text="Contact">Contact</a>
-                </li>
-              </ul>
+      <div class="nav-main fixed-top">
+        <div id="socials">
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter"></i>
+          </a>
+          <a href="#">English</a>
+        </div>
+        <nav class="navbar navbar-expand-md py-3">
+          <div class="container navigation-wrap">
+            <a class="navbar-brand d-none d-md-block" href="./index.html">&lt; <span>SPCTR</span> /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-lists" aria-controls="nav-lists">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="nav-lists" tabindex="-1" aria-labelledby="nav-lists">
+              <div class="offcanvas-header pb-0 justify-content-end">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="ul-wrapper">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html" data-text="Home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-text="Attend">Attend</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-text="Volunteer">Volunteer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-text="Contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!-- Header Content -->
       <section id="header-content" class="p-3">
         <h1 class="header-title">Devs, <br /> <span>Assemble!!</span></h1>
@@ -52,8 +64,74 @@
         <a href="mailto: devsassemble22@spctr.inc">devsassemble22@spctr.inc</a>
       </section>
     </header>
+    <section id="task">
+      <h5>What we do</h5>
+      <p class="we-do">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus velit, hic laudantium sit dolores nihil saepe molestias quo, tempore illo error consequatur id quisquam officia similique! Quos nihil aliquam quas distinctio qui nam vero, veritatis expedita incidunt tempore error velit modi quam nisi! Laboriosam.</p>
+      <p class="about-logo">&lt; <span>SPCTR</span> /&gt;</p>
+    </section>
+    <section id="task-list">
+      <h5 class="text-dark">Activities</h5>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed!</p>
+      <div class="container">
+        <div class="row program-list" role="list">
+          <div class="col-md-6 col-lg-3 list-item" role="listitem">
+            <div class="card">
+              <img class="task-bg" src="./assets/img/task-bg.jpg" alt="Task background Image">
+              <div class="task-overlay">
+                <img class="img-fluid" src="./assets/img/lecture.png" alt="Lecture image">
+                <h5>Training</h5>
+                <p>We offer on-site and online software development courses. Our qualified instructors teach beginner and advanced concepts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 list-item" role="listitem">
+            <div class="card">
+              <img class="task-bg" src="./assets/img/task-bg.jpg" alt="Task background Image">
+              <div class="task-overlay">
+                <img class="img-fluid" src="./assets/img/hackathon.png" alt="Hackathon image">
+                <h5>Hackathon</h5>
+                <p>We organize coding challenges every quarter. The winner gets to take home a cash prize.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 list-item" role="listitem">
+            <div class="card">
+              <img class="task-bg" src="./assets/img/task-bg.jpg" alt="Task background Image">
+              <div class="task-overlay">
+                <img class="img-fluid" src="./assets/img/networking.png" alt="Networking icon">
+              <h5>Networking</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, totam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners Section -->
+    <section id="partners">
+      <h5>Partner</h5>
+
+      <div class="container">
+        <span class="partner-logo" role="img">&lt; <span>SPCTR</span> /&gt;</span>
+        <img class="partner-img" src="./assets/img/tech-tool3.png" alt="Brand Logo">
+        <img class="partner-img" src="./assets/img/hackathon.png" alt="Brand Logo">
+        <img class="partner-img" src="./assets/img/tech-tool.png" alt="Brand Logo">
+        <img class="partner-img" src="./assets/img/networking.png" alt="Brand Logo">
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="about-footer">
+      <div class="footer-items">
+        <span class="my-logo" role="img">&lt; <span>SPCTR</span> /&gt;</span>
+        <div>
+          <p>2022, SPCTR Innovations Ghana.</p>
+          <p>Some Rights reserved</p>
+        </div>
+      </div>
+      <p class="flaticons">Icons are provided by <a href="https://www.flaticon.com/icons">Flaticons</a></p>
+    </footer>
   </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.bundle.min.js" integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./assets/js/index.js"></script>
+<!-- <script src="./assets/js/index.js"></script> -->
 </body>
 </html>

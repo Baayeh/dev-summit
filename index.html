@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Dev Summit</title>
 </head>
@@ -15,35 +16,46 @@
     <header>
       <div id="header-bg"></div>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md py-3 fixed-top">
-        <div class="container navigation-wrap">
-          <a class="navbar-brand d-none d-md-block" href="./index.html">&lt; <span>SPCTR</span> /&gt;</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-lists" aria-controls="nav-lists">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-start" id="nav-lists" tabindex="-1" aria-labelledby="nav-lists">
-            <div class="offcanvas-header pb-0 justify-content-end">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="ul-wrapper">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html" data-text="About">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-text="Attend">Attend</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-text="Volunteer">Volunteer</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-text="Contact">Contact</a>
-                </li>
-              </ul>
+      <div class="nav-main fixed-top">
+        <div id="socials">
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter"></i>
+          </a>
+          <a href="#">English</a>
+        </div>
+        <nav class="navbar navbar-expand-md py-3">
+          <div class="container navigation-wrap">
+            <a class="navbar-brand d-none d-md-block" href="./index.html">&lt; <span>SPCTR</span> /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-lists" aria-controls="nav-lists">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="nav-lists" tabindex="-1" aria-labelledby="nav-lists">
+              <div class="offcanvas-header pb-0 justify-content-end">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="ul-wrapper">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html" data-text="About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-text="Attend">Attend</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-text="Volunteer">Volunteer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-text="Contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!-- Header Content -->
       <section id="header-content" class="p-3">
         <h1 class="header-title">Devs, <br /> <span>Assemble!!</span></h1>
@@ -108,56 +120,7 @@
         <h5>Featured Speakers</h5>
 
         <div class="container">
-          <div class="row act-list" role="list">
-            <div class="col-md-6 act-item" role="listitem">
-              <img class="img-fluid act-img" src="./assets/img/sarkodie.jfif" alt="An image of Sarkodie">
-              <div class="card-content">
-                <h6 class="act-name">Sarkodie</h6>
-                <small>Ghanaian rapper, songwriter, and entrepreneur</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempore!</p>
-              </div>
-            </div>
-            <div class="col-md-6 act-item" role="listitem">
-              <img class="img-fluid act-img" src="./assets/img/basket mouth.jpg" alt="An image of Basketmouth">
-              <div class="card-content">
-                <h6 class="act-name">Basketmouth</h6>
-                <small>Nigerian comedian and actor</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempore!</p>
-              </div>
-            </div>
-            <div class="col-md-6 act-item" role="listitem">
-              <img class="img-fluid act-img" src="./assets/img/warris.jpg" alt="An image of Comedian Warris">
-              <div class="card-content">
-                <h6 class="act-name">Comedian Warris</h6>
-                <small>Ghanaian comedian and actor</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempore!</p>
-              </div>
-            </div>
-            <div class="col-md-6 act-item" role="listitem">
-              <img class="img-fluid act-img" src="./assets/img/davido.jpg" alt="An image of Davido">
-              <div class="card-content">
-                <h6 class="act-name">Davido</h6>
-                <small>Nigerian-American singer-songwriter</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempore!</p>
-              </div>
-            </div>
-            <div class="col-md-6 act-item" role="listitem">
-              <img class="img-fluid act-img" src="./assets/img/manifest.jpg" alt="An image of M.anifest">
-              <div class="card-content">
-                <h6 class="act-name">M.anifest</h6>
-                <small>Ghanaian musician, rapper and record producer</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempore!</p>
-              </div>
-            </div>
-            <div class="col-md-6 act-item" role="listitem">
-              <img class="img-fluid act-img" src="./assets/img/kenny-blaq.jpg" alt="An image of Kenny Blaq">
-              <div class="card-content">
-                <h6 class="act-name">Kenny Blaq</h6>
-                <small>Nigerian stand-up comedian and singer</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempore!</p>
-              </div>
-            </div>
-          </div>
+          <div class="row act-list" role="list"></div>
         </div>
       </section>
       <!-- Partners Section -->
