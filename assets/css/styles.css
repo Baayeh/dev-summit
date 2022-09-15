@@ -533,3 +533,38 @@ header.about-header section#header-content a {
   display: block;
   text-align: center;
 }
+
+section#task {
+  padding: 4em 1em;
+  background-color: #fff;
+  text-align: center;
+}
+
+section#task h5 {
+  color: #272a31;
+}
+
+section#task-list div.list-item div.card {
+  background-color: #272a31;
+}
+
+section#task-list {
+  padding: 5em 2em;
+}
+
+section#task-list div.list-item div.card:hover {
+  background-color: transparent;
+}
+
+footer#about-footer {
+  background-color: #272a31;
+  color: #fff;
+}
+
+footer#about-footer span.my-logo {
+  color: #fff;
+}
+
+footer#about-footer p {
+  color: #fff;
+}
