@@ -525,6 +525,10 @@ header.about-header section#header-content p.p-info {
   border: 2px dashed #d3d3d3;
 }
 
+footer#about-footer p {
+  color: #fff;
+}
+
 header.about-header section#header-content p {
   text-align: center;
 }
@@ -562,9 +566,5 @@ footer#about-footer {
 }
 
 footer#about-footer span.my-logo {
-  color: #fff;
-}
-
-footer#about-footer p {
   color: #fff;
 }
