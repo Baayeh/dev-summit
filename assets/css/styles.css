@@ -8,6 +8,10 @@
   color: #272a31;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f1efefc8;
 }
@@ -37,6 +41,13 @@ div#socials {
 
 nav {
   background-color: transparent;
+}
+
+button.navbar-toggler,
+button.navbar-toggler:hover,
+button.navbar-toggler:focus {
+  border: none;
+  outline: none;
 }
 
 a.navbar-brand {
@@ -116,10 +127,6 @@ section#header-content h1 {
 }
 
 span.partner-logo span {
-  color: #ec5242;
-}
-
-footer span.my-logo span {
   color: #ec5242;
 }
 
@@ -339,7 +346,7 @@ footer span.my-logo {
     align-items: baseline;
     width: 100%;
     gap: 1em;
-    padding-right: 2em;
+    padding-right: 6em;
   }
 
   div.ul-wrapper ul li a {

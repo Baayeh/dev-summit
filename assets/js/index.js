@@ -1,4 +1,15 @@
 const featuredList = document.querySelector('.act-list');
+const navBar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.innerWidth < 738) {
+    if (window.scrollY > 30) {
+      navBar.style.backgroundColor = 'white';
+    } else {
+      navBar.style.backgroundColor = 'transparent';
+    }
+  }
+});
 
 const speakers = [
   {
