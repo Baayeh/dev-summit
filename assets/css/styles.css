@@ -252,6 +252,10 @@ section#featured-list {
   padding: 2em 0;
 }
 
+div.task-overlay h5 {
+  color: #fff;
+}
+
 section#featured-list h5 {
   color: #272a31;
 }
@@ -454,12 +458,12 @@ footer span.my-logo {
     background-color: #272a31 !important;
     color: #fff;
   }
-  
+
   footer#about-footer span.my-logo {
     color: #fff !important;
   }
 
-  footer#about-footer div.footer-items div p{
+  footer#about-footer div.footer-items div p {
     color: #fff;
   }
 
@@ -636,10 +640,6 @@ div.task-overlay {
   background-color: #cd2b19;
   opacity: 0.7;
   transition: 1s;
-}
-
-div.task-overlay h5 {
-  color: #fff;
 }
 
 section#task-list {
