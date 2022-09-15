@@ -437,6 +437,10 @@ footer span.my-logo {
     padding: 4em 0;
   }
 
+  section#about-wrapper section#partners {
+    display: none;
+  }
+
   footer div.footer-items {
     width: 100%;
     gap: 3em;
@@ -444,6 +448,36 @@ footer span.my-logo {
 
   footer span.my-logo {
     flex-basis: unset;
+  }
+
+  footer#about-footer {
+    background-color: #272a31 !important;
+    color: #fff;
+  }
+  
+  footer#about-footer span.my-logo {
+    color: #fff !important;
+  }
+
+  footer#about-footer div.footer-items div p{
+    color: #fff;
+  }
+
+  footer#about-footer p.flaticons {
+    color: #fff;
+  }
+
+  div.task-overlay {
+    padding: 2em 0 !important;
+  }
+
+  section#task p.we-do {
+    width: 65%;
+    margin: 2em auto;
+  }
+
+  section#task p.about-logo {
+    width: 50%;
   }
 }
 
@@ -489,6 +523,14 @@ footer span.my-logo {
   section#header-content p.location span svg {
     width: 1em;
   }
+
+  section#task p.we-do {
+    width: 50%;
+  }
+
+  section#task p.about-logo {
+    width: 40%;
+  }
 }
 
 /***************************************************
@@ -518,6 +560,10 @@ footer span.my-logo {
   section#header-content p.location {
     font-size: 1.5em;
   }
+
+  section#task p.about-logo {
+    width: 30%;
+  }
 }
 
 /************************************************
@@ -533,7 +579,7 @@ header.about-header section#header-content p.p-info {
 }
 
 footer#about-footer p {
-  color: #fff;
+  color: #272a31;
 }
 
 header.about-header section#header-content p {
@@ -555,23 +601,68 @@ section#task h5 {
   color: #272a31;
 }
 
+section#task p.about-logo {
+  font-size: 3em;
+  font-weight: 900;
+  border: 1px solid #d3d3d3;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+section#task p.about-logo span {
+  color: #ec5242;
+}
+
 section#task-list div.list-item div.card {
-  background-color: #272a31;
+  position: relative;
+  padding: 0;
+}
+
+section#task-list div.list-item div.card img.task-bg {
+  width: 100%;
+  height: inherit;
+}
+
+div.task-overlay {
+  position: absolute;
+  width: 100%;
+  padding: 3em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #cd2b19;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+div.task-overlay h5 {
+  color: #fff;
 }
 
 section#task-list {
   padding: 5em 2em;
 }
 
-section#task-list div.list-item div.card:hover {
-  background-color: transparent;
+section#task-list div.list-item div.card:hover div.task-overlay {
+  opacity: 1;
+}
+
+section#task-list div.list-item div.card:hover div.task-overlay * {
+  color: #fff;
 }
 
 footer#about-footer {
-  background-color: #272a31;
+  background-color: #fff;
   color: #fff;
 }
 
 footer#about-footer span.my-logo {
-  color: #fff;
+  color: #272a31;
+}
+
+footer#about-footer span.my-logo span {
+  color: #ec5242;
 }
